@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/valorTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a Temperatura"
+        android:fontFamily="casual"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius"
+        android:layout_marginTop="8dp"
+        android:id="@+id/CelsiusRadio"
+        android:checked="false"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fahrenheit"
+        android:layout_marginTop="8dp"
+        android:id="@+id/fahrenheitRadio"
+        android:checked="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/converterButton"
+        android:layout_marginTop="16dp"
+        android:text="@string/converter_temperatura"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"/>
+</LinearLayout>

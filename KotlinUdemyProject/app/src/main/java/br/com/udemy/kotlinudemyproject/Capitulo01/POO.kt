@@ -13,7 +13,5 @@ fun main() {
     uno.modelo = "uno"
 
 
-//    println(uno.ano)
-//    println(uno.cor)
-//    println(uno.modelo)
+
 }

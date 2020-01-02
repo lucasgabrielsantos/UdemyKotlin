@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), Callback {
 
         val layout = LinearLayoutManager(this)
 
-        listView = findViewById(R.id.recyclerview) as RecyclerView
+        listView = findViewById<RecyclerView>(R.id.recyclerview)
         listView.layoutManager = layout
 
         adapter = ItemAdapter(listItens, this)
